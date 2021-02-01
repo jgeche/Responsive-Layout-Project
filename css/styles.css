@@ -1,0 +1,328 @@
+/* ================================= 
+  Main Elements
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  display:block;
+  position:relative;
+  list-style:none;
+  padding:2px 2px;
+  font-size:25px;
+  left:23%;
+  width:40%;
+  margin:0px;
+  font-weight:bold;
+}
+
+h1 {
+  display:block;
+  position:relative;
+  list-style:none;
+  text-align:center;
+  padding:2px 2px;
+  margin:0px;
+  border:0px;
+}
+
+h2 {
+  display:block;
+  font-size:1.5em;
+  position:relative;
+  font-weight:bold;
+  text-align:center;
+}
+
+img {
+  width:90%;
+}
+ 
+p {
+  text-align:center;
+  font-size:10px;
+  padding: 10px 10px;
+}
+
+h3 {
+  display:inline-block;
+  position:relative;
+  left:5%;
+  font-size:15px;
+}
+
+form {
+  display:none;
+}
+
+span {
+  display:inline-block;
+  position:relative;
+  left:37%;
+  font-size:15px;
+  font-weight:bold;
+}
+
+h4 {
+  display:block;
+  position:relative;
+  padding:15px 70px;
+  text-align:center;
+}
+
+h5 {
+  display:block;
+  position:relative;
+  text-align:center;
+}
+
+h6 {
+  font-size:20px;
+  padding:10px 50px;
+  position:relative;
+  text-align:center;
+}
+
+a {
+  text-decoration:none;
+  color:beige;
+}
+
+body {
+	line-height: 1.5;
+  font-family: 'Fira Sans', sans-serif;
+  color: beige;
+  background:maroon;
+  font-weight:300;
+}
+
+/* ================================= 
+  Main CLasses
+==================================== */
+
+.profile-image {
+  position:relative;
+  width:70%;
+  height:70%;
+  left:15%;
+}
+
+.marketing,.travel,.photo{
+  width:80%;
+  position:relative;
+  padding:5px 5px;
+  text-align:center;
+  left:10%;
+  margin:0px;
+}
+
+.search,.map,.calculator{
+  width:80%;
+  left:10%;
+  position:relative;
+  text-align:center;
+  padding:5px 5px;
+  margin-bottom: 0px;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-header {
+	background:red;
+  padding: 0 0;
+  height:50%;
+  border:solid orange;
+}
+
+.main-footer { 
+  padding: 1em 0;
+	background: maroon;
+}
+
+/* ---- Media Queries ---- */
+
+@media screen and (min-width:768px) {
+
+container {
+  width:100%;
+  margin:0 auto;
+}
+  
+ul li{
+  display:inline-block;
+  position:relative;
+  left:28%;
+  top:-25px;
+  width:auto;
+  border:0px;
+  text-align:left;
+}
+
+h1 {
+  margin:0px 0px;
+  left:35%;
+  top:-10px;
+  width:30%;
+}
+
+h6 {
+  text-align:left;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin:10px 10px;
+  top:-45px;
+  left:-50px;
+}
+  
+p {
+  display:inline-block;
+  padding:0px 0px;
+}
+  
+h3 {
+  display:inline-block;
+  position:relative;
+  left:5%;
+  font-size:25px;
+}
+
+form {
+  display:inline-block;
+  position:relative;
+  left:47%;
+  font-size:20px;
+  font-weight:bold;
+  padding-left:3px;
+  padding-right:3px;
+}
+  
+img {
+  width:90%;
+  left:15%;
+}
+
+span {
+  display:none;
+}
+
+.profile-image {
+  float:right;
+  width:25%;
+  left:-5%;
+  top:-35px;
+}
+  
+.contact {
+  right:50%;
+}
+  
+.marketing,.travel,.photo{
+  width:50%;
+  float:left;
+  left:0%;
+  display:inline-block;
+}
+
+.search,.map,.calculator{
+  width:50%;
+  float:right;
+  left:0%;
+  display:inline-block;
+  margin:0px;
+}
+}
+
+@media screen and (min-width:1024px) {
+
+container {
+  width:100%;
+  margin:0 auto;
+}
+  
+ul li{
+  margin:0px 0px;
+  padding:2px 15px;
+  left:60%;
+  top:-90px;
+}
+
+h1{
+  display:inline-block;
+  position:relative;
+  text-align:center;
+  left:-5%;
+}
+
+h4,h5 {
+    font-size:30px;
+}
+
+h6 {
+  font-size:32px;
+}
+
+h2 {
+  font-size:35px;
+}
+
+p {
+ font-size:20px;
+}
+  
+h3 {
+  left:5%;
+  font-size:30px;
+}
+
+form {
+  left:45%;
+  font-size:30px;
+  padding-left:10px;
+  padding-right:10px;
+}
+  
+img {
+   width:90%;
+}
+  
+.marketing,.map {
+  float:left;
+  width:30%;
+  padding:2px 2px;
+}
+
+.profile-image {
+  width:30%;
+  left:-5%;
+  top:-85px;
+}
+
+.search,.photo{
+  float:right;
+  width:30%;
+  padding:2px 2px;
+}
+  
+.travel,.calculator {
+  float:right;
+  width:30%;
+  left:-5%;
+  padding:2px 2px;
+}
+
+.main-header {
+ padding-bottom:50px;
+}
+
+.main-footer {
+  margin-bottom:100px;
+}
+
+.map,.calculator,.photo {
+    margin-bottom:20px;
+  }
+}
